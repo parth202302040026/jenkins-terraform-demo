@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/<yourusername>/jenkins-terraform-demo.git'
+                git 'https://github.com/parth202302040026/jenkins-terraform-demo.git'
             }
         }
         stage('Init Terraform') {
