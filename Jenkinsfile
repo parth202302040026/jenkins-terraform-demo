@@ -9,17 +9,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'building'
+                echo 'building'
             }
         }
         stage('Test') {
             steps {
-                bat 'Test'
+                echo 'Test'
             }
         }
         stage('Deploy') {
             steps {
-                bat 'Deploy'
+                echo 'Deploy'
             }
         }
     }
