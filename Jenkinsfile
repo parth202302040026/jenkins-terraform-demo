@@ -4,22 +4,22 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-               git branch: 'main', url: 'https://github.com/parth202302040026/jenkins-terraform-demo.git'
+               git branch: 'main', url: 'https://github.com/parth202302040026/jenkins-demo.git'
             }
         }
-        stage('Init Terraform') {
+        stage('Build') {
             steps {
-                bat 'terraform init'
+                bat 'building'
             }
         }
-        stage('Plan Terraform') {
+        stage('Test') {
             steps {
-                bat 'terraform plan'
+                bat 'Test'
             }
         }
-        stage('Apply Terraform') {
+        stage('Deploy') {
             steps {
-                bat 'terraform apply -auto-approve'
+                bat 'Deploy'
             }
         }
     }
